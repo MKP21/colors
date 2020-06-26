@@ -5,7 +5,7 @@ import './Palette.css';
 class Palette extends React.Component {
     render() {
         const colorBoxes = this.props.colors.map(color => (
-            <ColorBox b{...color} />
+            <ColorBox {...color} />
         ));
         return (
             <div className="Palette">
